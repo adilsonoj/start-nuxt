@@ -1,0 +1,29 @@
+version: "3"
+
+services:
+  nuxt:
+    build: ./
+    container_name: nuxt-app
+    restart: always
+    ports:
+      - "3000:3000"
+    command:
+      "npm run start"
+    networks:
+      - production-network
+
+  nginx:
+    image: nginx:latest
+    container_name: nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx:/etc/nginx/conf.d
+    depends_on:
+      - nuxt
+    networks:
+      - production-network
+
+networks:
+  production-network:
+    driver: bridge

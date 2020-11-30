@@ -80,6 +80,11 @@ export default {
           title: 'Inspire',
           to: '/inspire',
         },
+        {
+          icon: 'mdi-car-side',
+          title: 'Cars',
+          to: '/cars',
+        },
       ],
       miniVariant: false,
       right: true,
