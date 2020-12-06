@@ -93,6 +93,11 @@ export default {
           title: 'Usuários',
           to: '/users',
         },
+        {
+          icon: 'mdi-chat',
+          title: 'Meet',
+          to: '/meet',
+        },
       ],
       right: true,
       rightDrawer: false,
