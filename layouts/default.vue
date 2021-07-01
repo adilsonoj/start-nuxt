@@ -98,6 +98,11 @@ export default {
           title: 'Meet',
           to: '/meet',
         },
+        {
+          icon: 'mdi-calendar',
+          title: 'Calendar',
+          to: '/calendar',
+        },
       ],
       right: true,
       rightDrawer: false,
